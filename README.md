@@ -43,5 +43,25 @@ The basic 8-bit Kogge-Stone Architecture:
 
 
 
+## Performance Analysis
+
+### Kogge-Stone Adder
+
+| Bit-Width | Delay (ns) | Power (W) | LUTs | Transistors | No. of Stages |
+| --------- | ---------- | --------- | ---- | ----------- | ------------- |
+| 4-bit     | 6.371      | 0.074     | 6    | 84          | 2             |
+| 8-bit     | 7.561      | 0.078     | 14   | 276         | 3             |
+| 16-bit    | 8.304      | 0.088     | 61   | 804         | 4             |
+| 32-bit    | 9.791      | 0.151     | 150  | 2148        | 5             |
+| 64-bit    | 10.463     | 0.153     | 366  | 5454        | 6             |
+
+### Multiplier Comparison (8-bit)
+
+| Design       | Delay (ns) | Power (W) | LUTs |
+| ------------ | ---------- | --------- | ---- |
+| Conventional | 13.746     | 0.151     | 41   |
+| With KSA     | 12.732     | 0.111     | 142  |
+
+
 
 
